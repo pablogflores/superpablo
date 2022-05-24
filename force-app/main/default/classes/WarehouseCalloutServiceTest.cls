@@ -1,6 +1,6 @@
 @IsTest
 private class WarehouseCalloutServiceTest {
-    // implement your mock callout test here
+///
 	@isTest
     static void testWarehouseCallout() {
         test.startTest();
