@@ -9,6 +9,7 @@ private class WarehouseCalloutServiceTest {
         WarehouseCalloutService.execute(null);
         
         test.stopTest();
+        //pablo
         
         List<Product2> product2List = new List<Product2>();
         product2List = [SELECT ProductCode FROM Product2];
