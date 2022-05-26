@@ -1,5 +1,5 @@
 public class WarehouseCalloutService implements Queueable {
-    //LLamar a la api 
+    
     private static final String WAREHOUSE_URL = 'https://th-superbadge-apex.herokuapp.com/equipment';
 
     @Future(callout=true)
@@ -37,15 +37,15 @@ public class WarehouseCalloutService implements Queueable {
 
     }
     if(!listproducto.isEmpty()){
-        UPSERT listproducto Warehouse_SKU__c;
+        UPSERT listproducto;
     }
     
 
     }
     public static void execute (QueueableContext context){
-        System.debug('start runWarehouseEquipmentSync');
+       
         runWarehouseEquipmentSync();
-        System.debug('end runWarehouseEquipmentSync');
+       
     }
 
     public class equipmentjson{

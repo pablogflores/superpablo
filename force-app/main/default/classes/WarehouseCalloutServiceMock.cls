@@ -1,6 +1,6 @@
 @isTest
 global class WarehouseCalloutServiceMock implements HttpCalloutMock {
-    // implement http mock callout
+  
     global static HttpResponse respond(HttpRequest request) {
         
         HttpResponse response = new HttpResponse();
